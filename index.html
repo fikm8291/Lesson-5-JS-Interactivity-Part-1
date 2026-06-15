@@ -1,36 +1,75 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
-    <meta charset="UTF-8">
-    <title>Interactivity Lab</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Republic of Ingerlen Admin Portal</title>
 </head>
 <body>
 
-    <header>
-        <h1>Interactivity Playground</h1>
-        <button id="theme-btn">Switch Theme</button>
-    </header>
+  <header>
+    <h1>The Republic of Ingerlen</h1>
+    <p class="highlight">
+      Official Government Portal | Prime Minister: Aqeer Sitarma | Capital City: Manchester
+    </p>
 
-    <main id="card">
-        <section>
-            <button id="toggle-btn">Show Info</button>
-            <div id="extra-info" style="display: none;">
-                <p>You used JavaScript to show this text!</p>
-            </div>
-        </section>
+    <img
+      src="https://i.redd.it/pfsd6qpkpy6h1.jpeg"
+      alt="Flag of the Republic of Ingerlen"
+      id="flag-image"
+      width="300"
+    >
+  </header>
 
-        <section>
-            <h3>My Skills</h3>
-            <button id="glow-btn">Highlight Skills</button>
-            <ul>
-                <li>Web Design</li>
-                <li>Logic Building</li>
-                <li>Problem Solving</li>
-            </ul>
-        </section>
-    </main>
+  <hr>
 
-    <script src="script.js"></script>
+  <main>
+    <div id="declaration-card">
+      <h2>National Proclamation Notice</h2>
+      <p>State Projects | Infrastructure Funding | Capital Development</p>
+
+      <button id="briefing-btn">View Official Proclamation</button>
+      <button id="goals-btn">Show Capital City Plans</button>
+
+      <div id="goals-info" style="display: none;">
+        <p class="insight-text">
+          "By making Manchester our great capital city, Ingerlen moves beyond old limits and becomes a strong, modern, and self-reliant nation."
+        </p>
+      </div>
+    </div>
+
+    <div id="registry-box">
+      <h3>National Citizen Registry</h3>
+      <label for="citizen-tag">
+        Enter Citizen Registration ID:
+      </label>
+      <input
+        type="text"
+        id="citizen-tag"
+        placeholder="Enter your registration code..."
+      >
+    </div>
+
+    <div class="api-container">
+      <h3>National Advisory System</h3>
+      <p id="economic-advice">
+        Waiting for official government data...
+      </p>
+    </div>
+
+    <div id="capital-weather" class="api-container">
+      <h3>Capital City Weather Centre (Manchester)</h3>
+      <p>
+        Waiting for the latest forecast from the Ministry of Weather...
+      </p>
+    </div>
+
+  </main>
+
+  <footer id="page-footer">
+    <p>
+      Official Portal of the Ingerlen Ministry of National Development
+    </p>
+  </footer>
+
 </body>
 </html>
